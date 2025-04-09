@@ -1,0 +1,3 @@
+/home/miesho/programming/c/stm32l476x_setup/build/CMakeFiles/stm32l476x_setup.elf.dir
+/home/miesho/programming/c/stm32l476x_setup/build/CMakeFiles/edit_cache.dir
+/home/miesho/programming/c/stm32l476x_setup/build/CMakeFiles/rebuild_cache.dir
