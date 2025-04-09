@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/miesho/programming/c/stm32l476x_setup/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
