@@ -2,7 +2,7 @@
 #include "stm32l476xx.h"
 #include "stm32l4xx_hal.h"
 #include "rcc.h"
-#include "hard_usb.h"
+#include "hcd.h"
 
 void SysTick_Handler(void) {
     HAL_IncTick();
