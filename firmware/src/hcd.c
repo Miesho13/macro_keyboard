@@ -1,4 +1,4 @@
-#include "hard_usb.h"
+#include "hcd.h"
 #include "stm32l4xx_hal_hcd.h"
 #include "stm32l4xx_hal_gpio.h"
 #include "stm32l4xx_hal_rcc.h"
@@ -87,10 +87,12 @@ void OTG_FS_IRQHandler(void)
 }
 
 void HAL_HCD_Connect_Callback(HCD_HandleTypeDef *hhcd) {
+    (void)hhcd;
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
 }
 
 void HAL_HCD_Disconnect_Callback(HCD_HandleTypeDef *hhcd) {
+    (void)hhcd;
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
 }
 
