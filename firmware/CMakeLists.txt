@@ -24,6 +24,9 @@ file(GLOB_RECURSE SOURCE "src/*.c"
 include_directories(src)
 include_directories(src/drivers)
 include_directories(src/device)
+include_directories(lib/tinyusb/src)
+include_directories(lib/tinyusb/src/host)
+include_directories(./lib/tinyusb/src/common)
 
 add_executable(${PROJECT_NAME}.elf ${SOURCE})
 
