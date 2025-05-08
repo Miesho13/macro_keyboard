@@ -11,7 +11,7 @@ void SysTick_Handler(void) {
 int main() {
     HAL_Init();
     rcc_init();
-    usb_otg_fs_hcd_init();
+    // usb_otg_fs_hcd_init();
 
     while (1) { }
 }
