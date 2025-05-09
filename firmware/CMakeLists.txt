@@ -17,6 +17,13 @@ set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32L476RGTX_FLASH.ld)
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -specs=nosys.specs -T${LINKER_SCRIPT}")
 
 file(GLOB_RECURSE SOURCE "src/*.c"
+                         "./lib/tinyusb/src/tusb.c"
+                         "./lib/tinyusb/src/host/*.c"
+                         "./lib/tinyusb/src/common/*.c"
+                         "./lib/tinyusb/src/class/hid/*.c"
+                         "./lib/tinyusb/src/class/hid/hid_host.c"
+                         "./lib/tinyusb/src/class/cdc/*.c"
+                         "./lib/tinyusb/src/class/msc/*.c"
                          "./src/drivers/*.c"
                          "./src/device/*.s"
                          "./src/device/*.c")
@@ -25,8 +32,9 @@ include_directories(src)
 include_directories(src/drivers)
 include_directories(src/device)
 include_directories(lib/tinyusb/src)
+include_directories(lib/tinyusb/src/class/hid)
 include_directories(lib/tinyusb/src/host)
-include_directories(./lib/tinyusb/src/common)
+include_directories(lib/tinyusb/src/common)
 
 add_executable(${PROJECT_NAME}.elf ${SOURCE})
 
