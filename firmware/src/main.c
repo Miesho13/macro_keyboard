@@ -11,9 +11,13 @@ void SysTick_Handler(void) {
 int main() {
     HAL_Init();
     rcc_init();
-    // usb_otg_fs_hcd_init();
 
-    tuh_init(0);
+    tusb_rhport_init_t host_init = {
+         .role = TUSB_ROLE_HOST,
+         .speed = TUSB_SPEED_AUTO
+    };
+
+    tusb_init(0, &host_init);
 
     while (1) { 
         tuh_task();

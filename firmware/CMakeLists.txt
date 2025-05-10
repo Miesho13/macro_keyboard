@@ -24,6 +24,7 @@ file(GLOB_RECURSE SOURCE "src/*.c"
                          "./lib/tinyusb/src/class/hid/hid_host.c"
                          "./lib/tinyusb/src/class/cdc/*.c"
                          "./lib/tinyusb/src/class/msc/*.c"
+                         "./lib/tinyusb/src/osal/*.c"
                          "./src/drivers/*.c"
                          "./src/device/*.s"
                          "./src/device/*.c")
