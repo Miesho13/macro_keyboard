@@ -2,7 +2,6 @@
 #include "tusb.h"
 #include "stm32l4xx_hal.h"
 #include "stm32l4xx_hal_hcd.h"
-#include "hcd_old.h"  // <- for usb_org_fs_hcd_take()
 #include "panic.h"
 
 static HCD_HandleTypeDef _hhcd_USB;
