@@ -19,11 +19,15 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -specs=nosys.specs -T${LIN
 file(GLOB_RECURSE SOURCE "src/*.c"
                          "./src/drivers/*.c"
                          "./src/device/*.s"
+                         "./src/STM32_USB_Host_Library/Class/*.c"
+                         "./src/STM32_USB_Host_Library/Core/*.c"
                          "./src/device/*.c")
 
 include_directories(src)
 include_directories(src/drivers)
 include_directories(src/device)
+include_directories(src/STM32_USB_Host_Library/Core)
+include_directories(src/STM32_USB_Host_Library/Class)
 
 add_executable(${PROJECT_NAME}.elf ${SOURCE})
 
