@@ -6,6 +6,7 @@
 #include "usbh_def.h"
 #include "usbh_hid.h"
 #include "usbh_hid_keybd.h"
+#include "command.h"
 
 extern USBH_HandleTypeDef hUsbHostFS;
 extern ApplicationTypeDef Appli_state;
@@ -56,6 +57,9 @@ int main() {
     rcc_init();
 
     MX_USB_HOST_Init();
+
+    command_init();
+
     while (1) { 
         MX_USB_HOST_Process();
         if (Appli_state == APPLICATION_READY) {
