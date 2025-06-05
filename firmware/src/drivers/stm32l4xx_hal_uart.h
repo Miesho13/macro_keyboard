@@ -26,6 +26,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l4xx_hal_def.h"
+#include "stm32l4xx_hal_dma.h"
 
 /** @addtogroup STM32L4xx_HAL_Driver
   * @{
@@ -216,6 +217,7 @@ typedef uint32_t HAL_UART_RxTypeTypeDef;
   *           HAL_UART_RXEVENT_IDLE               = 0x02U,
   */
 typedef uint32_t HAL_UART_RxEventTypeTypeDef;
+
 
 /**
   * @brief  UART handle Structure definition
