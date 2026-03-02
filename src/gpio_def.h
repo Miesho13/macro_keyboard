@@ -1,0 +1,34 @@
+#ifndef __GPIO_DEF__
+#define __GPIO_DEF__
+
+#define GPIO_GREEN_LED_DIODE_PORT (GPIOB)
+#define GPIO_GREEN_LED_DIODE_PIN  (3)
+
+#define GPIO_USART_TX_PORT  (GPIOA)
+#define GPIO_USART_TX_PIN   (2)
+
+#define GPIO_USART_RX_PORT  (GPIOA)
+#define GPIO_USART_RX_PIN   (3)
+
+#define GPIO_MATRIX_X1_PORT  (GPIOA)
+#define GPIO_MATRIX_X1_PIN   (2)
+
+#define GPIO_MATRIX_X2_PORT  (GPIOA)
+#define GPIO_MATRIX_X2_PIN   (7)
+
+#define GPIO_MATRIX_X3_PORT  (GPIOA)
+#define GPIO_MATRIX_X3_PIN   (6)
+
+#define GPIO_MATRIX_Y1_PORT  (GPIOA)
+#define GPIO_MATRIX_Y1_PIN   (5)
+
+#define GPIO_MATRIX_Y2_PORT  (GPIOA)
+#define GPIO_MATRIX_Y2_PIN   (4)
+
+#define GPIO_MATRIX_Y3_PORT  (GPIOA)
+#define GPIO_MATRIX_Y3_PIN   (3)
+
+#define GPIO_MATRIX_Y4_PORT  (GPIOA)
+#define GPIO_MATRIX_Y4_PIN   (1)
+
+#endif // __GPIO_DEF__
